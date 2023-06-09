@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Front-End Assignment</title>
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+  <div id="first">
+    <div class="title">
+      <h2 id="text">Drag and drop Interface</h2>
+    
+    </div>
+   
+    
+    <div class="outer-container">
+
+    <!-- Reset button to clear the second container and reset the first container to its original state. -->
+     <button onclick="resetContainers()">Reset</button>
+      <div class="inner-container" id="container1">
+        <!-- Box-1 -->
+        <div draggable="true" class="item" id="item1">
+          <img src="https://www.caravancampingnsw.com/wp-content/uploads/2022/06/Roadtrip-With-Friends-5.jpeg" alt="Image 1">
+          <h6 id="heading">Travelling</h6>
+          <p  id="description">“The journey of a thousand miles begins with a single step.”</p>
+        </div>
+        <!-- Box-2 -->
+        <div draggable="true" class="item" id="item2">
+          <img src="https://imgeng.jagran.com/images/2023/mar/Best%20Cameras%20For%20Photography16691861357791678962439662.jpg" alt="Image 2">
+          <h6 id="heading">Photography</h6>
+          <p  id="description">“Photography takes an instant out of time, altering life by holding it still.”</p>
+        </div>
+        <!-- Box-3 -->
+        <div draggable="true" class="item" id="item3">
+          <img src="https://c1.wallpaperflare.com/preview/643/535/608/buddha-meditation-relaxation-meditate.jpg" alt="Image 3">
+          <h6 id="heading">Meditation</h6>
+          <p  id="description">“Delight in meditation and solitude.</p>
+        </div>
+        <!-- Box-4 -->
+        <div draggable="true" class="item" id="item4">
+          <img src="https://i0.wp.com/www.yogabasics.com/yogabasics2017/wp-content/uploads/2021/07/Yoga-for-exercise.jpeg" alt="Image 4">
+          <h6 id="heading">Exercise</h6>
+          <p  id="description">“The body achieves what the mind believes.” </p>
+        </div>
+        <!-- Box-5-->
+           <div draggable="true" class="item" id="item5">
+          <img src="https://t4.ftcdn.net/jpg/05/68/65/15/360_F_568651537_zOkQgPp2q28VD0LhD7yeGBwcxdKygSlg.jpg" alt="Image 4">
+          <h6 id="heading">Art</h6>
+          <p  id="description">“Painting is a means of self-enlightenment.” </p>
+        </div>
+     
+        
+      </div>
+    <!-- Drag and drop items from the first container to the second container. -->
+      <div class="container" id="container2" ondragover="event.preventDefault()" ondrop="drop(event)">
+    </div>
+    </div>
+   
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
